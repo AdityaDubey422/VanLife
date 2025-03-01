@@ -1,6 +1,7 @@
-:root{
+:root {
   --border-radius: 3px;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -32,6 +33,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   a {
     text-decoration: none;
   }
@@ -41,18 +43,20 @@ nav {
   font-weight: 900;
   font-size: 25.35px;
   line-height: 40.27px;
+
   a {
     color: #000000;
   }
 }
 
-header > nav > ul {
+header>nav>ul {
   list-style: none;
   display: flex;
   gap: 2rem;
   font-weight: 600;
   font-size: 16px;
   line-height: 22.92px;
+
   a {
     color: #4d4d4d;
   }
@@ -81,12 +85,12 @@ header > nav > ul {
   opacity: 0.46;
 }
 
-.homeMain > * {
+.homeMain>* {
   position: relative;
   z-index: 2;
 }
 
-.homeMain > h2 {
+.homeMain>h2 {
   font-weight: 800;
   font-size: 36px;
   line-height: 42px;
@@ -94,14 +98,14 @@ header > nav > ul {
   margin-bottom: 23px;
 }
 
-.homeMain > p {
+.homeMain>p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 56px;
 }
 
-.homeMain > a {
+.homeMain>a {
   display: block;
   cursor: pointer;
   background-color: #ff8c38;
@@ -117,6 +121,7 @@ header > nav > ul {
   text-decoration: none;
   color: #ffffff;
 }
+
 footer {
   background-color: #252525;
   font-weight: 500;
@@ -133,6 +138,7 @@ footer {
   padding: 50px 27px;
   color: #161616;
 }
+
 .aboutMain img {
   height: 233px;
   width: 100%;
@@ -145,6 +151,7 @@ footer {
   line-height: 38px;
   margin-bottom: 31px;
 }
+
 .aboutMain .para {
   font-weight: 500;
   font-size: 1rem;
@@ -182,4 +189,51 @@ footer {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
+}
+
+.vansMain {
+  color: #161616;
+  padding: 70px 28px
+}
+
+.vansMain>h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 33.65px;
+  margin-bottom: 23px;
+
+}
+
+.vansFilterContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vansFilter{
+  display: flex;
+  gap: 20px;
+}
+
+.vansFilter>p {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 7px 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23.92px;
+  color: #4D4D4D;
+  background-color: #FFEAD0;
+
+}
+
+.clearFilter {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23.92px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: Auto;
+
 }
