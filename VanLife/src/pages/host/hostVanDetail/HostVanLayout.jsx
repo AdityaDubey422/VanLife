@@ -25,7 +25,7 @@ export default function HostVanLayout() {
     <div className="hostVanLayoutMain">
       <NavLink to=".." relative="path">
         <span className="back-link">
-          <img src="/public/assets/images/arrow.svg" alt="" />
+          <img src="/assets/images/arrow.svg" alt="" />
           Back to all vans
         </span>
       </NavLink>

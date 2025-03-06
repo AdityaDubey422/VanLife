@@ -3,7 +3,7 @@ export default function About() {
   return (
       <main className="aboutMain">
         <img
-          src="/public/assets/images/about-hero.png"
+          src="/assets/images/about-hero.png"
           alt=""
         />
         <div className="aboutMainContent">
