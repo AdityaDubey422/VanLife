@@ -23,7 +23,7 @@ export default function VanDetail() {
  
   return (
     <main className="van-detail-main">
-        <Link to="/vans"><span className="back-link"><img src="../public/assets/images/arrow.svg" alt="" />Back to all vans</span></Link>
+        <Link to="/vans"><span className="back-link"><img src="/public/assets/images/arrow.svg" alt="" />Back to all vans</span></Link>
       <div className="van-detail-container">
         {vanDetail ? (
           <div className="van-detail">

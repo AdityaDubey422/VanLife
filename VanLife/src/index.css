@@ -112,7 +112,7 @@ header > nav > ul {
 }
 
 .homeMain {
-  background-image: url("../public/assets/images/home-hero.png");
+  background-image: url("/public/assets/images/home-hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
