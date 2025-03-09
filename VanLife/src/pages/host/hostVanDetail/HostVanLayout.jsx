@@ -6,7 +6,7 @@ export default function HostVanLayout() {
   useEffect(() => {
     fetch(`/api/host/vans/${id}`)
       .then((res) => res.json())
-      .then((data) => setHostVanDetail(data.vans[0]))
+      .then((data) => setHostVanDetail(data.vans))
       .catch((error) => console.log(error));
   }, [id]);
   return !hostVanDetail ? (
