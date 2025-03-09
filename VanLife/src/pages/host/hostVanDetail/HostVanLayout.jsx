@@ -9,16 +9,6 @@ export default function HostVanLayout() {
       .then((data) => setHostVanDetail(data.vans[0]))
       .catch((error) => console.log(error));
   }, [id]);
-  let vanTypeBackgroundColor;
-  if (hostVanDetail) {
-    if (hostVanDetail.type === "simple") {
-      vanTypeBackgroundColor = "#E17654";
-    } else if (hostVanDetail.type === "luxury") {
-      vanTypeBackgroundColor = "#161616";
-    } else if (hostVanDetail.type === "rugged") {
-      vanTypeBackgroundColor = "#115E59";
-    }
-  }
   return !hostVanDetail ? (
     <p>Loading...</p>
   ) : (
@@ -34,10 +24,7 @@ export default function HostVanLayout() {
           <img src={hostVanDetail.imageUrl} alt="" className="hostVanImage" />
           <div className="hostVanRight">
             <p
-              className="vanType hostVanType"
-              style={{
-                backgroundColor: vanTypeBackgroundColor,
-              }}
+              className={`vanType hostVanType ${hostVanDetail.type}`}
             >
               {hostVanDetail.type[0].toUpperCase() +
                 hostVanDetail.type.slice(1)}
